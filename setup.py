@@ -30,6 +30,7 @@ setup(
     entry_points={
         'console_scripts': [
             'camera_node = gs_stereo_camera.camera_node:main',
+            'stereo_node = gs_stereo_camera.stereo_node:main',
         ],
     },
 )
