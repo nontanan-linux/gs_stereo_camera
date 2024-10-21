@@ -5,7 +5,7 @@ how to use packages step.
 - calibration camera
 - depth esitmation
 ## Table of Contents (สารบัญ)
-- [Requirement](#requirement)
+- [Requirement](##requirement)
 - [Installation](#installation)
 - [Calibrate the camera](#calibrate-the-camera)
 - [Estimate depth image](#estimate-depth-image)
@@ -17,10 +17,13 @@ how to use packages step.
 ## 2. Calibrate the camera
 ### 2.1 open camera using v4l2 camera by tier 4
 ### 2.2 open camera using opencv
+```
+ros2 run gs_stereo_camera camera_node --ros-args -p device:=0 -p namespace:='/laptop'
+```
 ## 3. Estimate depth image
 ### 3.1 sgbm algorithm
-### 3.2 gbm algorighm
+### 3.2 bm algorighm
 ## 4. Result
 ### 4.1 compare with realsense d453
 ![Robot Image](images/compare_realsense.png)
-## Development: Nontanan@gensurv.com
+## Developer: Nontanan@gensurv.com

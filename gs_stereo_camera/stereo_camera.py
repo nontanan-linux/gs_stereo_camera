@@ -26,6 +26,7 @@ class StereoCameraNode(Node):
         self.stereo = cv2.StereoSGBM_create(minDisparity=self.minDisparity,
                                             numDisparities=16*self.numDisparities, 
                                             blockSize=self.blockSize)
+        # stereo = cv2.StereoBM_create(numDisparities=16*self.numDisparities, blockSize=self.blockSize)
         self.bridge = CvBridge()
         # Subscriptions to left and right images
         self.left_image_sub = self.create_subscription(
